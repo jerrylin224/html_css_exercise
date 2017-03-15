@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      section {
+        max-width: 1200px;
+        margin: 0 auto;
+        background: #646363;
+      }
+
+      section::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      div {
+        width: 15%;
+        float: left;
+        background-color: #fff;
+      }
+
+      article {
+        width: 70%;
+        padding-right: 30px;
+        background-color: #FFFFC9;
+        float: left;
+      }
+
+      aside {
+        overflow: hidden;
+        background-color: #CBFFCC;
+      }
+
+      footer {
+        background-color: #E8EAF9;
+        clear:both;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>
+        <p>In a two-column layout you don't want either column to clear content of the other. Float the sidebar to the right and you're set: its content now renders in the sidebar's own block formatting context.
+
+        However, a clear: in the main area still clears the sidebar, which is undesirable. You need to give the sidebar an own BFC. Since there is no actual "command" to create one, you need to hack it.</p>
+      </div>
+      <article>
+        <p>In a two-column layout you don't want either column to clear content of the other. Float the sidebar to the right and you're set: its content now renders in the sidebar's own block formatting context.
+
+        However, a clear: in the main area still clears the sidebar, which is undesirable. You need to give the sidebar an own BFC. Since there is no actual "command" to create one, you need to hack it.
+
+        Below see a list of issues and side effects with BFC-creating properties on the main area.
+
+        Best solution: overflow: hidden
+        This is the only reliably working property, use it whenever you can. Caution: This will literally cut off any content that leaves the container. You must not specify a height on the main area so it can stretch as needed. If any content ever needs to overlap the main area's borders, try adding padding (no pun intended).<p>
+      </article>
+      <aside>
+        <p>there is no actual "command" to create one, you need to hack it.
+
+        Below see a list of issues and side effects with BFC-creating properties on the main area.
+
+        Best solution: overflow: hidden
+        This is the only reliably working property, use it whenever you can. Caution: This will literally cut off any content that leaves the container. You must not specify a height on the main area so it can stretch as needed. If any content ever needs to overlap the main area's borders, try adding padding (no pun intended).</p>
+      </aside>
+      <footer>Now let’s try to remedy this with CSS instead of adding extra HTML markup to our document as we did before. There is a method that allows a parent element to clear itself of any floated elements inside it. It uses a CSS property called overflow with a value of hidden. Note that the overflow property was not intended for this type of use, and could cause some issues s</footer>
+    </section>
+  </body>
+</html>

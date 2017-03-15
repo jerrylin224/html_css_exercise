@@ -1,0 +1,102 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font: 28px Helvetica, Arial, sans-serif; 
+}
+
+article {
+	border: 2px solid #000;
+	width: 680px;
+	padding: 10px 15px 15px 15px;
+}
+
+h1 {
+	font-size: 56px;
+	margin: 0;
+}
+
+h2 {
+	border-top: 30px solid #000;
+	border-bottom: 1px solid #000;
+	margin: 5px 0 0 0;
+	padding: 10px 0 10px 0;
+	font-size: 28px;
+}
+
+p {
+	margin:0;
+}
+
+header {
+	border-bottom: 15px solid #000;	
+	margin: 0 0 10px 0;
+}
+
+header dl + dl {
+  text-align: right;
+}
+
+header dl {
+	margin: 0;
+	display: inline-block;
+	width: 50%;
+	padding: 5px 0;
+}
+
+thead th {
+	text-align: right;
+}
+
+
+dt, dd {
+	display: inline;
+	margin: 0;
+}
+
+dt {
+	font-weight: 600;
+}
+
+dl {
+	padding: 0;
+	margin: 0;
+}
+
+th {
+	font-weight: bold;
+}
+
+tbody th {
+    padding: 2px 0;
+    font-weight: normal;
+    text-align: left;
+    border-top: 1px solid #000000;
+}
+
+tbody td {
+	border-top: 1px solid #000000;	
+}
+
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+}
+
+tr td:last-of-type {
+	font-weight: 600;
+}
+
+td.indent {
+    width: 28px;
+    border-top: none;
+}
+
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}

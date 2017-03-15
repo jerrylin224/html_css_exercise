@@ -1,0 +1,178 @@
+<form action="/" method="post">
+  <fieldset>
+    <dl>
+      <dt><label for="name">Your Name</label></dt>
+      <dd><input type="text" name="name" id="name" placeholder="例：林家弘" required ></dd>
+      <dt><label for="email">Email</label></dt>
+      <dd><input type="email" name="email" id="email" requried ></dd>
+      <dt><label for="phone">Phone Number</label></dt>
+      <dd><input type="phone" name="phone" id="phone" required ></dd>
+      <dt><label for="message">Message</label></dt>
+      <dd><textarea rows="6" cols="80" name="message" id="message" >我已經幫你填一些資料了，你可以自由地更改</textarea>
+    </dl>
+    <input type="submit" value="Send Message" >
+    <button>Send Message</button>
+    <input type="reset" value="clear" >
+  </fieldset>
+</form>
+
+<form action="" method="get">
+  <fieldset>
+    <label for="query">Search for"</label>
+    <input type="search" id="query" name="query" />
+    <input type="radio" name="favorite" value="tv" id="tv" />
+    <label for="tv">TV</label>
+    <input type="radio" name="favorite" value="movie" id="movie" />
+    <label for="movie">Movies</label>
+    <input type="radio" name="favorite" value="music" id="music" />
+    <label for="music">Music</label>
+    <input type="button" value="search" />
+  </fieldset>
+</form>
+
+<form action="" method="post">
+  <fieldset>
+    <dl>
+      <dt><label for="title">Movie</label></dt>
+      <dd>
+         <select name="title" id="title">
+           <optgroup label="western">
+            <option value="Looper">Looper</option>
+            <option value="Frozen">Frozen</option>
+            <option value="Tommy Boy">Tommy Boy</option>
+          </optgroup>
+          <optgroup label="easten">
+            <option value"臥虎藏龍">臥虎藏龍</option>
+            <option value"讓子彈飛">讓子彈飛</option>
+            <option value"你的名字">你的名字</option>
+          </optgroup>
+        </select>
+      </dd>
+      <dt><label for="rating">Rating</label></dt>
+      <dd><input type="range" min="1" max="5" name="rating" id="rating"></dd>
+    </dl>
+    <div>
+      <label><input type="checkbox" id="checkbox" name="checkbox" checked>
+        Add to my favorites
+      </label>
+    </div>
+    <input type="submit" value="Rate movie"  >
+  </fieldset>
+</form>
+
+<table style="border: solid; border-width: 1px;">
+  <caption>水果總類、數量及每磅價格</caption>
+  <thead>
+    <tr>
+      <th scope="col">Product</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Apple</td>
+      <td>34</td>
+      <td>$3.99/lb</td>
+    </tr>
+    <tr>
+      <td>Banana</td>
+      <td>16</td>
+      <td>$1.69/lb</td>
+    </tr>
+    <tr>
+      <td>Carrot</td>
+      <td>42</td>
+      <td>$2.49/lb</td>
+    </tr>
+    <tr>
+      <td>Kiwi</td>
+      <td>18</td>
+      <td>$0.69/lb</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Major</th>
+      <th scope="col">GPA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Chris Lee</th>
+      <td>Supply Chain Management</td>
+      <td>3.7</td>
+    </tr>
+    <tr>
+      <th scope="row">Shane Riley</th>
+      <td>Photojournalism</td>
+      <td>3.8</td>
+    </tr>
+    <tr>
+      <th scope="row">Kevin Wang</th>
+      <td>Computer Science</td>
+      <td>4.0</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Type</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" rowspan="3">Red</th>
+      <td>Meiomi Pinot Noir</td>
+      <td>$17.99</td>
+    </tr>
+    <tr>
+      <td>Radius Carbernet</td>
+      <td>$9.99</td>
+    </tr>
+    <tr>
+      <td>Apothic Red</td>
+      <td>$7.97</td>
+    </tr>
+    <tr>
+      <th scope="row" rowspan="3">White</th>
+      <td>Cloud Break Chardonnay</td>
+      <td>$8.99</td>
+    </tr>
+    <tr>
+      <td>Kendall Jackson Chardonnay</td>
+      <td>$9.77</td>
+    </tr>
+    <tr>
+      <td>Kim Crawford Sauvigon Blanc</td>
+      <td>$9.77</td>
+    </tr>
+    <tr>
+      <th scope="row" rowspan="3">Sake</th>
+      <td>Gekkeikan Sake</td>
+      <td>$9.99</td>
+    </tr>
+    <tr>
+      <td>Mura Mura Moutain Sake</td>
+      <td>$15.99</td>
+    </tr>
+    <tr>
+      <td>TY KU Sake Junmai Ginjo Black</td>
+      <td>$21.99</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<p>ake Junmai Ginjo Blacake Junmai Ginjo Blacake Junmai Ginjo Blac</p>
+<a>

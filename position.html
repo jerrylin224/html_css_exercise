@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <style>
+      #absolute {
+        z-index: 1;
+        width: 400px;
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        margin-left: -200px;
+        padding: 30px 15px;
+        background-color: #FFFFCA;
+        box-sizing: border-box;
+      }    
+      #fixed {
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, .6);
+      }
+
+      #small-box {
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        width: 20px;
+        height: 20px;
+        background: #fcfc99;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      Cras et luctus ipsum. Nulla eu est mauris. Pellentesque in volutpat felis. Aenean vitae bibendum elit. Sed mattis magna et odio pretium iaculis. Proin ante dolor, bibendum vitae mi porta, ultricies fringilla nisi. Maecenas at cursus lorem. Cras scelerisque lacus quis risus dapibus, eu auctor neque bibendum. In non diam tortor. Maecenas a felis eget est scelerisque fringilla. Sed a volutpat massa, sit amet suscipit odio. Sed viverra vulputate leo non blandit. Sed vehicula risus diam, id aliquam elit tempus in. Cras elit enim, auctor id ultrices sollicitudin, ultricies vitae felis.
+
+      Praesent ut mauris sed libero sodales convallis at sed enim. Nullam feugiat ut lacus venenatis rhoncus. Sed vel felis vitae mi iaculis sodales at ut diam. Aliquam tristique finibus porttitor. Etiam et justo et tellus commodo lacinia. Nunc bibendum magna sed odio accumsan efficitur. Donec orci dui, congue eu mauris nec, mollis tincidunt urna. Nullam at velit vel arcu convallis accumsan et ut urna. Nullam quis sagittis leo.
+
+      Maecenas convallis porta turpis, at dignissim lacus suscipit in. Praesent ut mauris sed libero sodales convallis at sed enim. Nullam feugiat ut lacus venenatis rhoncus. Sed vel felis vitae mi iaculis sodales at ut diam. Aliquam tristique finibus porttitor. Etiam et justo et tellus commodo lacinia. Nunc bibendum magna sed odio accumsan efficitur. Donec orci dui, congue eu mauris nec, mollis tincidunt urna. Nullam at velit vel arcu convallis accumsan et ut urna. Nullam quis sagittis leo.
+
+      Nullam feugiat ut lacus venenatis rhoncus. Sed vel felis vitae mi iaculis sodales at ut diam. Aliquam tristique finibus porttitor. Etiam et justo et tellus commodo lacinia. Nunc bibendum magna sed odio accumsan efficitur. Donec orci dui, congue eu mauris nec, mollis tincidunt urna. Nullam at velit vel arcu convallis accumsan et ut urna. Nullam quis sagittis leo.
+    </section>
+    <div id="absolute">
+      I'm positioned
+      <div id="small-box">
+      </div>
+    </div>
+    <div id="fixed"></div>
+  </body>
+</html>
